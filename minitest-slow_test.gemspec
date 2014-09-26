@@ -8,9 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Minitest::SlowTest::VERSION
   spec.authors       = ["Yuji Yaginuma"]
   spec.email         = ["yuuji.yaginuma@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{Display the summary of a slow test when tests finished.}
+  spec.homepage      = "https://github.com/y-yagi/minitest-slow_test"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
