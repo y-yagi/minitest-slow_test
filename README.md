@@ -2,6 +2,10 @@
 
 Display the summary of a slow test when tests finished.
 
+[![Build Status](https://travis-ci.org/y-yagi/minitest-slow_test.svg?branch=master)](https://travis-ci.org/y-yagi/minitest-slow_test)
+[![Gem Version](https://badge.fury.io/rb/minitest-slow_test.svg)](http://badge.fury.io/rb/minitest-slow_test)
+
+
 ## Output example
 
 ```shell
