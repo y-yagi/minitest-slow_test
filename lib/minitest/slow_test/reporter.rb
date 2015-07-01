@@ -16,7 +16,9 @@ module Minitest
       end
 
       def record(result)
-        @slow_test_list << result if result.time.to_f > SlowTest.long_test_time
+        if result.time.to_f > SlowTest.long_test_time && !SlowTest.exclude_test_name.include?(result.name.to_s)
+          @slow_test_list << result
+        end
       end
 
       # When using the following methods together with `minitest-reporters`,
