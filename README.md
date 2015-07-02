@@ -49,6 +49,12 @@ require 'minitest/slow_test'
 Minitest::SlowTest.long_test_time = 0.5  # specified in seconds
 ```
 
+If there is a test that you do not want to display even if slow, use the `exclude` options.
+
+```ruby
+Minitest::SlowTest.exclude_test_name = %(test_do_not_display)  # specify the test name in the Array of String
+```
+
 ### When use with `minitest-reporters`
 
 When use it with `minitest-reporters`, it is necessary to set `Minitest::SlowTest::Reporter` in `Minitest::Reporters.use!`
