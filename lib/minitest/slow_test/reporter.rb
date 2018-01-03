@@ -11,7 +11,8 @@ module Minitest
       def report
         super
         @slow_test_list.each do |slow_test|
-          io.print "[SlowTest] %s#%s : %.2fs\n" % [slow_test.class, slow_test.name, slow_test.time]
+          klass = slow_test.respond_to?(:klass) ? slow_test.klass : slow_test.class
+          io.print "[SlowTest] %s#%s : %.2fs\n" % [klass, slow_test.name, slow_test.time]
         end
       end
 
